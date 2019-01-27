@@ -1,7 +1,7 @@
 
 module.exports.run = async (bot,message,args) => {
 
-message.channel.send("<@&539146159521005590> // A scrim is starting now!");
+message.channel.send("Scrim starting now!");
 }
 
 
