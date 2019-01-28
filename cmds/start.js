@@ -72,7 +72,7 @@ module.exports.run = async (bot, message, args) => {
     setTimeout(async () => {
         editLast3 = await message.channel.send({embed: last3});
 
-        message.channel.overwritePermission(message.guild.defaultRole, {
+        message.channel.overwritePermissions(message.guild.defaultRole, {
             SEND_MESSAGES: true
         }).catch((err) => {
             console.log(err);
@@ -148,7 +148,7 @@ module.exports.run = async (bot, message, args) => {
 
         message.channel.send({embed: endMsg});
 
-        message.channel.overwritePermission(message.guild.defaultRole, {
+        message.channel.overwritePermissions(message.guild.defaultRole, {
             SEND_MESSAGES: false
         }).catch((err) => {
             console.log(err);
