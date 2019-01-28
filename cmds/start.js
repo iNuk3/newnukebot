@@ -141,7 +141,7 @@ module.exports.run = async (bot, message, args) => {
     collector.on('end', collected => {
         console.log(`Collected ${collected.size} items`);
 
-        let endMsg = new Discord.RichEmbed
+        let endMsg = new Discord.RichEmbed()
             .setTitle("No more codes accepted at this point")
             .setDescription("Good luck and have fun!")
             .setColor("#ff0000");
